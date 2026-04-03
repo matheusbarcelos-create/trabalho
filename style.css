@@ -1,0 +1,210 @@
+@font-face {
+    font-family: fonte2;
+    src: url('fontesletra/15186161383443530157.otf');
+}
+@font-face {
+    font-family: fonte1;
+    src: url('fontesletra/BwModelicaBoldCondensed.otf');
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.divlogo{
+    height: 40%;
+    width: 100%;
+    background-image: linear-gradient(to right,gray,rgb(255, 115, 0));
+    background-size: 500% 100%;
+    animation: degrade-animado 3s infinite alternate;
+    
+}
+
+
+@keyframes degrade-animado{
+    0%{background-position-x: 0% ;
+    }
+    100%{
+        background-position-x: 100% ;
+    }
+    
+    
+}
+h1{
+    font-family: fonte2;
+    text-align: center;
+}
+h2{
+    font-size: x-large;
+    font-family: fonte2;
+    text-align: center;
+}
+p{
+
+    margin: 10px;
+    word-spacing: 5px;
+    font-family: fonte1;
+    text-align: left;
+    font-size: large;
+    }
+
+    nav{
+        text-align: center;
+        margin-top: 50px;
+        font-family: fonte1
+        
+    }
+
+    nav a{
+        color: black;
+        text-decoration: none;
+        padding: 0px 50px 10px 0;
+        font-size: 16px;
+        position:relative;
+        
+    }
+
+    nav a::after{
+        content: " ";
+        width: 0%;
+        height: 4px;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    nav a:hover::after{
+        width:100%;
+    }
+
+.esq{
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+    left: 1280px;
+
+}
+.cent{
+    position: absolute;
+   
+    width: 500px;
+    height: 500px;
+    left: 670px;
+
+}
+.dir{
+    position: absolute;
+   
+    width: 500px;
+    height: 500px;
+    left: 50px;
+
+}
+
+body{
+    width: 100%;
+    background-image: url(imagens/background.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wpp{
+    position:absolute;
+    width: 50px;
+    height: 50x;
+    transform: translateX(755px);
+}
+.email{
+    position:absolute;
+    width: 50px;
+    height: 50x;
+    transform: translateX(877px);
+}
+.loc{
+      position:absolute;
+    width: 50px;
+    height: 50x;
+    transform: translateX(997px);
+
+}
+
+ol,li{
+    text-align: center;
+    font-family: fonte1;
+    margin: 10px;
+    word-spacing: 5px;
+    font-size: large;
+    list-style:inside;
+
+
+}
+
+.centro{
+    font-family: fonte1;
+    text-align: center;
+    margin: 10px;
+    word-spacing: 5px;
+    font-size: large;
+}
+
+.horario{
+      position:absolute;
+    width: 50px;
+    height: 50x;
+    transform: translateX(680px);
+
+}
+
+table{
+        margin: 10px;
+    word-spacing: 5px;
+    position:absolute;
+    transform: translateX(555px);
+    width: 40%;
+    border-collapse: collapse;
+}
+td{
+    margin: 10px;
+    word-spacing: 5px;
+    font-family: fonte1;
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+th{
+
+    font-family: fonte2;
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+.req{
+    width: 50%;
+    height: 50%;
+    transform: translateX(450px);
+
+}
+
+form{
+    text-align: center;
+    margin: 10px;
+    word-spacing: 5px;
+    font-family: fonte1;
+    font-size: large;
+}
+.centt{
+    position: absolute;
+   
+    width: 800px;
+    height: 500px;
+    left: 530px;
+}
