@@ -12,15 +12,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+    body{
+    height: 100vh;
+    background-image: url(imagens/background.jpg);
 }
 
 .divlogo{
-    height: 40%;
+    height: 25%;
     width: 100%;
-    background-image: linear-gradient(to right,gray,rgb(255, 115, 0));
-    background-size: 500% 100%;
-    animation: degrade-animado 3s infinite alternate;
+    background-image: linear-gradient(to right,#c16c45,#b2beb5,#c2b280);
+    background-size: 500% 200%;
+    animation: degrade-animado 2.5s infinite alternate;
     
 }
 
@@ -34,15 +38,76 @@
     
     
 }
+
+
+.divconteudo{
+
+    height: 70%;
+    width: 100%;
+
+}
+
+
+.divimagens{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divcomunic{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divimagemunica{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.divnav{
+width: 100%;
+height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 h1{
     font-family: fonte2;
     text-align: center;
+    margin: 10px;
+    word-spacing: 5px;
 }
+
+
 h2{
     font-size: x-large;
     font-family: fonte2;
     text-align: center;
+    margin: 10px;
+    word-spacing: 5px;
 }
+
+h3{
+    font-size: large;
+    font-family: fonte2;
+    text-align: center;
+    margin: 10px;
+    word-spacing: 5px;
+}
+
+
 p{
 
     margin: 10px;
@@ -52,23 +117,26 @@ p{
     font-size: large;
     }
 
-    nav{
+
+nav{
         text-align: center;
         margin-top: 50px;
         font-family: fonte1
         
     }
 
-    nav a{
+
+nav a{
         color: black;
         text-decoration: none;
         padding: 0px 50px 10px 0;
         font-size: 16px;
         position:relative;
         
-    }
+}
 
-    nav a::after{
+
+nav a::after{
         content: " ";
         width: 0%;
         height: 4px;
@@ -79,120 +147,58 @@ p{
         transition: 0.5s ease-in-out;
     }
 
-    nav a:hover::after{
+
+nav a:hover::after{
         width:100%;
     }
 
-.esq{
-    position: absolute;
 
-    width: 500px;
-    height: 500px;
-    left: 1280px;
 
-}
-.cent{
-    position: absolute;
-   
-    width: 500px;
-    height: 500px;
-    left: 670px;
 
-}
-.dir{
-    position: absolute;
-   
-    width: 500px;
-    height: 500px;
-    left: 50px;
 
-}
-
-body{
-    width: 100%;
-    background-image: url(imagens/background.jpg);   
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.wpp{
-    position:absolute;
-    width: 50px;
-    height: 50x;
-    transform: translateX(755px);
-}
-.email{
-    position:absolute;
-    width: 50px;
-    height: 50x;
-    transform: translateX(877px);
-}
-.loc{
-      position:absolute;
-    width: 50px;
-    height: 50x;
-    transform: translateX(997px);
-
-}
-
-ol,li{
-    text-align: center;
+ol{
     font-family: fonte1;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ol li{
     margin: 10px;
     word-spacing: 5px;
     font-size: large;
-    list-style:inside;
-
 
 }
 
-.centro{
-    font-family: fonte1;
-    text-align: center;
-    margin: 10px;
-    word-spacing: 5px;
-    font-size: large;
+ol li a{
+    text-decoration: none;
+    display: block;
+    position: relative;
 }
 
-.horario{
-      position:absolute;
-    width: 50px;
-    height: 50x;
-    transform: translateX(680px);
-
-}
 
 table{
-        margin: 10px;
-    word-spacing: 5px;
-    position:absolute;
-    transform: translateX(555px);
-    width: 40%;
-    border-collapse: collapse;
+    font-family: fonte1;
+    display: flex;
+    justify-content: center;
+
 }
-td{
+table tr{
     margin: 10px;
     word-spacing: 5px;
-    font-family: fonte1;
-    border: 1px solid black;
-    text-align: center;
-    padding: 8px;
+    font-size: ;
 }
 th{
-
-    font-family: fonte2;
-    border: 1px solid black;
-    text-align: center;
-    padding: 8px;
+    font-family: fonte1;
+    border: 3px solid black;
+    padding: 15px;
+}
+table tr td{
+border: 1px solid black;
+padding: 3px;
 }
 
-.req{
-    width: 50%;
-    height: 50%;
-    transform: translateX(450px);
-
-}
 
 form{
     text-align: center;
@@ -201,10 +207,94 @@ form{
     font-family: fonte1;
     font-size: large;
 }
-.centt{
-    position: absolute;
-   
-    width: 800px;
-    height: 500px;
-    left: 530px;
+
+ul{
+    list-style: none;
+    display: flex;
 }
+
+ul li{
+    font-family: fonte1;
+    margin: 0 20px;
+
+}
+
+ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    position: relative;
+    padding: 8px;
+}
+
+ul:hover li a{
+    opacity: 0.3;
+    
+
+}
+
+ul li a:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b2beb5;
+    z-index: -1;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: .2s;
+}
+
+ul li a:hover::before{
+    transform-origin:left;
+    transform: scaleX(1);
+    transition: transform .2s;
+}
+
+.divinfos{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form input[type = submit]{
+    width: 80px;
+    height: 40px;
+    background-color: #c16c45;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type = text]{
+    width: 250px;
+    height: 50px;
+    background: transparent;
+    border: solid #c16c45;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    outline: 0;
+}
+form input[type = password]{
+    width: 250px;
+    height: 50px;
+    background: transparent;
+    border: solid #c16c45;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    outline: 0;
+    
+}
+
+
