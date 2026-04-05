@@ -29,27 +29,26 @@
     height: 50%;
     width: 80%;
     background-image: url(imagens/parede-de-tijolos.png);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
+    background-size: cover;
+    border-radius: 20px;
+   
 }
 
 .caixa::before, .caixa::after{
     content: '';
     position: absolute;
     z-index: -1;
-    width: calc(100% + 30px);
-    height: calc(100% + 30px);
-    background: linear-gradient(100deg,#ff8239,white,rgb(0, 0, 0),white,#ff8239,rgb(0, 0, 0),#ff8239,#ff8239);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background: linear-gradient(45deg,black,white,black,white,black);
     background-size: 300%;
-    border-radius: 8px;
+    border-radius: 20px;
     animation: animaborda 8s linear infinite;
 
 }
 
 .caixa::after{
-    filter: blur(50px);
+    filter: blur(100px);
 }
 
 @keyframes animaborda {
@@ -57,7 +56,7 @@
         background-position: 0;
     }
     100%{
-          background-position: 300%;
+          background-position: 150%;
     }   
 }
 
@@ -200,6 +199,9 @@ ol li a{
     position: relative;
 }
 
+tr{
+    background-color: #ff82392c;
+}
 
 table{
     font-family: fonte1;
@@ -294,7 +296,7 @@ ul li a:hover::before{
 form input[type = submit]{
     width: 80px;
     height: 40px;
-    background-color: #c16c45;
+    background-color: #ff8239;
     border: 0;
     color: white;
     cursor: pointer;
@@ -304,7 +306,7 @@ form input[type = text]{
     width: 250px;
     height: 50px;
     background: transparent;
-    border: solid #c16c45;
+    border: solid #ff8239;
     color: rgb(0, 0, 0);
     padding: 10px;
     outline: 0;
@@ -313,11 +315,13 @@ form input[type = password]{
     width: 250px;
     height: 50px;
     background: transparent;
-    border: solid #c16c45;
+    border: solid #ff8239;
     color: rgb(0, 0, 0);
     padding: 10px;
     outline: 0;
     
 }
+
+
 
 
