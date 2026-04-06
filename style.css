@@ -293,34 +293,8 @@ ul li a:hover::before{
 
 }
 
-form input[type = submit]{
-    width: 80px;
-    height: 40px;
-    background-color: #ff8239;
-    border: 0;
-    color: white;
-    cursor: pointer;
-}
 
-form input[type = text]{
-    width: 250px;
-    height: 50px;
-    background: transparent;
-    border: solid #ff8239;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    outline: 0;
-}
-form input[type = password]{
-    width: 250px;
-    height: 50px;
-    background: transparent;
-    border: solid #ff8239;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    outline: 0;
     
-}
 
 
 

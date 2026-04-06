@@ -97,32 +97,34 @@
 </nav>
 </div>
 
+<a href="https://uniube.br/" target="_blank">
+<h2><img src="imagens/uniubelogo.png" width="5%" height="5%">
+</h2></a>
 
-<h2><img src="imagens/uniubelogo.png" width="5%" height="5%"></h2>
 
+                  <form action="" method="get">
+            <fieldset>
+                <legend>Fale conosco</legend>
+                <label for="idName">Nome:</label>
+                <input type="text" id="idName" name="userName" required>
+                <br>
 
-  <form action="irparabeckend.php" method="post">
-      <label for="ra"></label><input type="text" ra="ra" id="ra" placeholder=" SEU REGISTRO ACADÊMICO">
-  <br><br>
-      
+                <label for="idEmail">E-mail:</label>
+                <input type="email" id="idEmail" name="email" required>
+                <br>
 
-      <label for="senha"></label> <input type="password" name="senha" id="senha" placeholder=" SUA SENHA">
-      
-      <br><br>
+                <label for="idPhone">Telefone:</label>
+                <input id="idPhone" type="tel" name="phone" pattern="[0-9]{11}" placeholder="DDD+número">
+                <br>
 
-      QUAL SEU CURSO: <select name="cdd">
-        <optgroup label="CURSOS">
-          <option value="1">ENG. COMPUTAÇÃO</option>
-          <option value="2">SISTEMAS</option>
-          <option value="3">ADS</option>
-        </optgroup>
-        <optgroup label="CURSO/NÃO CURSO">
-          <option value="4">OUTRO CURSO</option>
-          <option value="5">NÃO CURSO NADA</option>
-          <option value="6">CURSO DE OUTRA UNIVERSIDADE</option>
-        </optgroup>
-      </select><br><br>
-    <input type="submit" value="OK">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="comentario" id="mensagem"></textarea>
+                <br>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+            
 
     <br>
     <br>
