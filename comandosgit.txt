@@ -1,0 +1,23 @@
+cd Desktop
+
+cd primeirosite
+
+git init
+
+git status
+
+git add .
+
+git commit -m "commit inicial"
+
+git config --global user.email "matheusbarcelos@edu.uniube.br"
+
+git config --global user.name "matheusbarcelos-create"
+
+git commit -m "commit inicial"
+
+git branch -M main
+
+git remote add origin https://github.com/matheusbarcelos-create/trabalho.git
+
+git push -u origin main
