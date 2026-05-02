@@ -75,17 +75,6 @@ O site deve ser publicado utilizando:
 
 ---
 
-## 🚀 Como Visualizar
-
-```bash
-git clone https://github.com/matheusbarcelos-create/trabalho.git
-cd trabalho
-```
-
-> Abra o `index.html` diretamente no navegador — nenhuma instalação necessária.
-
----
-
 ## 📬 Contato
 
 <a href="https://www.linkedin.com/in/matheus-barcelos-de-almeida034/">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
