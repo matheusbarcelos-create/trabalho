@@ -18,6 +18,46 @@ Trabalho acadêmico desenvolvido para a disciplina **Tecnologias para a Internet
 
 ---
 
+## 📋 Requisitos do Projeto
+
+### 📁 Estrutura de Arquivos
+O projeto consiste no desenvolvimento de um site completo com no mínimo 10 páginas, abordando um tema livre à escolha do aluno. O objetivo é aplicar conceitos fundamentais de estruturação web, organização de arquivos e boas práticas de desenvolvimento.
+
+O site deve possuir uma organização básica de arquivos, incluindo:
+- Pasta principal do projeto
+- Subpasta para imagens
+- Subpasta para arquivos de estilo (CSS)
+- Arquivo principal `index.html`
+- Possibilidade de outras pastas conforme necessidade
+
+Essa estrutura facilita a manutenção, organização e escalabilidade do projeto.
+
+### 🧩 Componentes Essenciais
+O site deve conter os seguintes elementos:
+- Logo da Uniube com link abrindo em nova aba
+- Menu de navegação com links para todas as páginas
+- Rodapé contendo o nome do aluno e RA
+- Galeria de imagens relacionada ao tema
+- Uso de listas e tabelas para organização de conteúdo
+- Formulário de contato ("Fale Conosco")
+
+### 🌐 Publicação
+O site deve ser publicado utilizando:
+- **GitHub Pages** — hospedagem gratuita pelo GitHub
+- **Repositório público no GitHub**
+- O link do site deve ser enviado no diário de bordo
+- O repositório deve ser compartilhado com o professor
+
+### 🔍 SEO
+- Criar o arquivo `sitemap.xml` e enviá-lo ao Google Search Console
+- Criar o arquivo `robots.txt` para definir quais páginas podem ser indexadas
+
+### 📊 Análise de Dados
+- Implementar **Google Analytics** para análise de tráfego e comportamento dos usuários
+- Implementar **Google Tag Manager** para gestão de scripts e rastreamentos
+
+---
+
 ## 📄 Páginas do Projeto
 
 | Página | Conteúdo |
@@ -35,6 +75,16 @@ Trabalho acadêmico desenvolvido para a disciplina **Tecnologias para a Internet
 
 ---
 
+## 🚀 Como Visualizar
+
+```bash
+git clone https://github.com/matheusbarcelos-create/trabalho.git
+cd trabalho
+```
+
+> Abra o `index.html` diretamente no navegador — nenhuma instalação necessária.
+
+---
 
 ## 📬 Contato
 
