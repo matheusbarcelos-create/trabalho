@@ -35,15 +35,6 @@ Trabalho acadêmico desenvolvido para a disciplina **Tecnologias para a Internet
 
 ---
 
-## 🚀 Como Visualizar
-
-Basta clonar o repositório e abrir o arquivo `index.html` no navegador — nenhuma instalação necessária.
-
-```bash
-git clone https://github.com/matheusbarcelos-create/trabalho.git
-cd trabalho
-```
-
 > Abra o `index.html` diretamente no browser.
 
 ---
