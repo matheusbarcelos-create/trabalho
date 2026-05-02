@@ -35,9 +35,6 @@ Trabalho acadêmico desenvolvido para a disciplina **Tecnologias para a Internet
 
 ---
 
-> Abra o `index.html` diretamente no browser.
-
----
 
 ## 📬 Contato
 
