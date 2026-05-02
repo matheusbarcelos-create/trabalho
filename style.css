@@ -1,3 +1,6 @@
+/* =============================================
+   FONTES LOCAIS
+   ============================================= */
 @font-face {
     font-family: fonte2;
     src: url('fontesletra/15186161383443530157.otf');
@@ -5,115 +8,59 @@
 @font-face {
     font-family: fonte1;
     src: url('fontesletra/BwModelicaBoldCondensed.otf');
-    
 }
 
-*{
+/* =============================================
+   VARIÁVEIS GLOBAIS
+   ============================================= */
+:root {
+    --cor-laranja:      #ff8239;
+    --cor-laranja-suave: #ff82392c;
+    --cor-texto:        #000000;
+    --cor-fundo-tabela: #ff82392c;
+    --max-largura:      960px;
+    --transicao:        0.3s;
+}
+
+/* =============================================
+   RESET E BASE
+   ============================================= */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-    body{
-    height: 100vh;
-    background-position:center;
+body {
+    min-height: 100vh; 
+    background-position: center;
     background-repeat: repeat;
     background-image: url(imagens/background.jpg);
 }
 
-.caixa{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    position: relative;
-    height: 50%;
-    width: 80%;
-    background-image: url(imagens/parede-de-tijolos.png);
-    background-size: cover;
-    border-radius: 20px;
-   
-}
-
-.caixa::before, .caixa::after{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-    background: linear-gradient(45deg,black,white,black,white,black);
-    background-size: 300%;
-    border-radius: 20px;
-    animation: animaborda 8s linear infinite;
-
-}
-
-.caixa::after{
-    filter: blur(100px);
-}
-
-@keyframes animaborda {
-    0%{
-        background-position: 0;
-    }
-    100%{
-          background-position: 150%;
-    }   
+/* =============================================
+   WRAPPER DE PÁGINA
+   ============================================= */
+.pagina {
+    max-width: var(--max-largura);
+    margin: 0 auto;
+    padding: 20px 40px 60px;
 }
 
 
-
-.divconteudo{
-
-    max-height: 50%;
-    width: 100%;
-
-}
-
-
-.divimagens{
-    width: 100%;
-    max-height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.divcomunic{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.divimagemunica{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.divnav{
-width: 100%;
-height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-h1{
+/* =============================================
+   TIPOGRAFIA
+   ============================================= */
+h1 {
     font-family: fonte2;
     text-align: center;
     margin: 10px;
     word-spacing: 5px;
 }
 
-
-h2{
+h2 {
     font-size: x-large;
     font-family: fonte2;
     text-align: center;
@@ -121,7 +68,7 @@ h2{
     word-spacing: 5px;
 }
 
-h3{
+h3 {
     font-size: large;
     font-family: fonte2;
     text-align: center;
@@ -129,173 +76,350 @@ h3{
     word-spacing: 5px;
 }
 
-
-p{
-
-    margin: 10px;
+p {
+    margin: 10px 0;
     word-spacing: 5px;
     font-family: fonte1;
     text-align: left;
     font-size: large;
-    }
-
-
-nav{
-        text-align: center;
-        margin-top: 50px;
-        font-family: fonte1
-        
-    }
-
-
-nav a{
-        color: black;
-        text-decoration: none;
-        padding: 0px 50px 10px 0;
-        font-size: 16px;
-        position:relative;
-        
+    line-height: 1.6;
 }
 
-
-nav a::after{
-        content: " ";
-        width: 0%;
-        height: 4px;
-        background-color: black;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: 0.5s ease-in-out;
-    }
-
-
-nav a:hover::after{
-        width:100%;
-    }
-
-
-
-
-
-ol{
-    font-family: fonte1;
-    list-style: none;
+/* =============================================
+   HEADER
+   ============================================= */
+header {
+    background-color: var(--cor-laranja);
+    padding: 16px 40px;
     display: flex;
-    justify-content: center;
-    
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-ol li{
-    margin: 10px;
-    word-spacing: 5px;
-    font-size: large;
-
-}
-
-ol li a{
-    text-decoration: none;
+header .header-logo img {
+    height: 45px;
+    width: auto;
     display: block;
-    position: relative;
 }
 
-tr{
-    background-color: #ff82392c;
+header nav {
+    margin-top: 0;
+    text-align: right;
 }
 
-table{
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
     font-family: fonte1;
-    display: flex;
-    justify-content: center;
-
-}
-table tr{
-    margin: 10px;
-    word-spacing: 5px;
-    font-size: large;
-}
-th{
-    font-family: fonte1;
-    border: 3px solid black;
-    padding: 15px;
-}
-table tr td{
-border: 1px solid black;
-padding: 3px;
+    font-size: 16px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background-color var(--transicao);
 }
 
+header nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
-form{
+/* =============================================
+   FOOTER
+   ============================================= */
+footer {
+    background-color: var(--cor-laranja);
     text-align: center;
-    margin: 10px;
-    word-spacing: 5px;
-    font-family: fonte1;
-    font-size: large;
+    padding: 20px 40px;
+    margin-top: 60px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
 }
 
-ul{
+footer p {
+    font-family: fonte1;
+    font-size: medium;
+    color: #ffffff;
+    text-align: center;
+    margin: 4px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #000000;
+}
+
+/* =============================================
+   NAVEGAÇÃO ENTRE PÁGINAS (divnav)
+   ============================================= */
+nav.nav-paginas {
+    text-align: center;
+    font-family: fonte1;
+    margin-top: 0;
+}
+
+nav.nav-paginas a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color var(--transicao);
+}
+
+
+nav.nav-paginas a:hover {
+    background-color: var(--cor-laranja);
+    color: #ffffff;
+}
+
+/* =============================================
+   LISTAS
+   ============================================= */
+
+ol {
+    font-family: fonte1;
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+ol li {
+    margin: 10px 0;
+    word-spacing: 5px;
+    font-size: large;
+    line-height: 1.6;
+}
+
+ol li a {
+    text-decoration: none;
+    color: var(--cor-laranja);
+    display: inline;
+}
+
+ol li a:hover {
+    text-decoration: underline;
+}
+
+
+ol.valores {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+ol.valores li {
+    background-color: var(--cor-laranja-suave);
+    border-left: 4px solid var(--cor-laranja);
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-ul li{
+ul li {
     font-family: fonte1;
     margin: 0 20px;
-
 }
 
-ul li a{
-    color: rgb(0, 0, 0);
+ul li a {
+    color: var(--cor-texto);
     text-decoration: none;
     font-size: 22px;
     display: block;
-    position: relative;
-    padding: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color var(--transicao);
 }
 
-ul:hover li a{
-    opacity: 0.3;
-    
 
+ul li a:hover {
+    background-color: var(--cor-laranja);
+    color: #ffffff;
 }
 
-ul li a:hover{
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-ul li a::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ff8239;
-    z-index: -1;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: .2s;
-}
-
-ul li a:hover::before{
-    transform-origin:left;
-    transform: scaleX(1);
-    transition: transform .2s;
-}
-
-.divinfos{
+/* =============================================
+   TABELAS
+   ============================================= */
+.table-wrapper {
     display: flex;
-    height: 20%;
+    justify-content: center;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+table {
+    font-family: fonte1;
+    border-collapse: collapse;
+}
+
+tr {
+    background-color: var(--cor-fundo-tabela);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 130, 57, 0.1);
+}
+
+th {
+    font-family: fonte1;
+    border: 3px solid var(--cor-texto);
+    padding: 12px 15px;
+    background-color: var(--cor-laranja);
+}
+
+td {
+    border: 1px solid var(--cor-texto);
+    padding: 8px 12px;
+    font-size: large;
+    word-spacing: 3px;
+}
+
+/* =============================================
+   FORMULÁRIO
+   ============================================= */
+form {
+    font-family: fonte1;
+    font-size: large;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+fieldset {
+    border: 2px solid var(--cor-laranja);
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+legend {
+    font-family: fonte2;
+    font-size: x-large;
+    padding: 0 10px;
+}
+
+fieldset label {
+    font-family: fonte1;
+    display: block;
+    margin-bottom: 4px;
+}
+
+fieldset input,
+fieldset textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: fonte1;
+    font-size: medium;
+}
+
+fieldset textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+fieldset button[type="submit"] {
+    align-self: center;
+    padding: 10px 40px;
+    background-color: var(--cor-laranja);
+    border: none;
+    border-radius: 30px;
+    font-family: fonte1;
+    font-size: large;
+    cursor: pointer;
+    transition: transform var(--transicao), box-shadow var(--transicao);
+}
+
+fieldset button[type="submit"]:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 10px var(--cor-laranja);
+}
+
+/* =============================================
+   LAYOUTS DE CONTEÚDO
+   ============================================= */
+.divconteudo {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.divimagens {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.divimagens img {
+    border-radius: 10px;
+    flex: 1;
+    width: 0; 
+    height: auto;
+    object-fit: cover;
+}
+
+.divimagemunica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divimagemunica img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.divnav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px dashed var(--cor-laranja);
+}
+
+.divinfos {
+    display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-
+    margin: 20px 0;
 }
 
+/* =============================================
+   CLASSES UTILITÁRIAS
+   ============================================= */
 
-    
+.texto-atencao {
+    color: #cc0000;
+    font-family: fonte1;
+    font-size: large;
+    margin: 8px 0;
+    word-spacing: 5px;
+}
 
+.texto-info {
+    color: #0055cc;
+    font-family: fonte1;
+    font-size: large;
+    margin: 8px 0;
+    word-spacing: 5px;
+}
 
-
-
+.secao {
+    margin: 30px 0;
+}
